@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Six Sprinkles & a Whisk - Homemade Baked Goods</title>
+    <title>6 Sprinkles & a Whisk - Homemade Baked Goods</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -24,11 +24,23 @@
         .btn-primary {
             @apply bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out;
         }
+        .btn-cta {
+            animation: pulse 2s infinite;
+        }
         .card {
             @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center;
         }
         .text-brown-custom {
             color: #7F5F3E; /* Custom brown color for text */
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
         }
     </style>
 </head>
@@ -111,7 +123,7 @@
             <div class="card">
                 <img src="https://placehold.co/200x150/D1EDF2/333?text=Cookies" alt="Cookies" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
                 <h4 class="text-2xl font-semibold mb-2 text-brown-custom">Cookies</h4>
-                <p class="text-gray-700">Classic chocolate chip, soft snickerdoodles, hearty oatmeal raisin, and seasonal favorites!</p>
+                <p class="text-gray-700">Classic chocolate chip, soft snickerdoodles, and seasonal favorites!</p>
             </div>
             <!-- Bake Card 2: Cakes -->
             <div class="card">
@@ -124,6 +136,11 @@
                 <img src="https://placehold.co/200x150/DCEBCC/333?text=Bread" alt="Breads" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
                 <h4 class="text-2xl font-semibold mb-2 text-brown-custom">Sourdough & Artisan Breads</h4>
                 <p class="text-gray-700">Freshly baked sourdough, rustic artisan loaves, and warm, fluffy cinnamon rolls.</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/200x150/DCEBCC/333?text=Cupcakes" alt="Cupcakes" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
+                <h4 class="text-2xl font-semibold mb-2 text-brown-custom">Cupcakes</h4>
+                <p class="text-gray-700">Decorated cupcakes in various flavors and designs!</p>
             </div>
             <!-- Bake Card 4: More -->
             <div class="card">
@@ -150,11 +167,11 @@
                     Please message Kalee directly on her Facebook page to place your order.
                     She's currently working on a full menu to post, but you can always inquire about specific items or custom requests!
                 </p>
-                <a href="https://www.facebook.com/messages/t/YourFacebookPageName" target="_blank" class="btn-primary">
+                <a href="https://www.facebook.com/profile.php?id=61577717257564" target="_blank" class="btn-primary btn-cta">
                     Message Us on Facebook
                 </a>
                 <p class="text-sm text-gray-500 mt-2">
-                    (Replace 'YourFacebookPageName' with Kalee's actual Facebook page name or link for messaging)
+                    6 Sprinkles & a Whisk is a small family business, and Kalee will respond as soon as possible to confirm your order.)
                 </p>
             </div>
 
