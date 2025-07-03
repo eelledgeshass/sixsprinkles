@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Sprinkles & a Whisk - Homemade Baked Goods</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; /* A soft, creamy background */
+            color: #333;
+        }
+        .hero-section {
+            /* Removed background-image to make the logo and text more prominent - - - - */
+            background-color: #F5E6CC; /* A soft, complementary color */
+            min-height: 500px; /* Ensure sufficient height for hero */
+        }
+        .section-bg-light {
+            background-color: #fff9f0; /* Slightly lighter background for sections */
+        }
+        .btn-primary {
+            @apply bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center;
+        }
+        .text-brown-custom {
+            color: #7F5F3E; /* Custom brown color for text */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-orange-500 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="./images/sixsprinkles.jpg" alt="Six Sprinkles & a Whisk Logo" class="h-10 w-10 mr-3 rounded-full border-2 border-white">
+                <h1 class="text-3xl font-bold text-shadow">Six Sprinkles & a Whisk</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-orange-200 transition duration-200">Home</a></li>
+                    <li><a href="#about" class="hover:text-orange-200 transition duration-200">About Us</a></li>
+                    <li><a href="#bakes" class="hover:text-orange-200 transition duration-200">Our Bakes</a></li>
+                    <li><a href="#order" class="hover:text-orange-200 transition duration-200">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center justify-center text-gray-800 py-20 px-4 rounded-b-lg shadow-lg">
+        <div class="text-center bg-white bg-opacity-70 p-8 rounded-lg max-w-2xl mx-auto backdrop-blur-sm shadow-xl">
+            <img src="./images/sixsprinkles.jpg" alt="Six Sprinkles & a Whisk Logo" class="h-32 w-32 mx-auto mb-6 rounded-full border-4 border-orange-300 object-cover">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-brown-custom">Welcome to Six Sprinkles & a Whisk!</h2>
+            <p class="text-xl md:text-2xl mb-8 font-light italic text-gray-700">Homemade Goodness, Baked with Love (and just a little bit of chaos)!</p>
+            <a href="#order" class="btn-primary">Message to Order Now!</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-4xl font-bold text-brown-custom mb-4">Meet Kalee & Our Story</h3>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                Hi there! I'm Kalee—a homeschooling mama of six, passionate about baking delicious treats right from my home kitchen under cottage food laws.
+                "Six Sprinkles & a Whisk" is truly a small family business, and every single item is made-from-scratch with fresh ingredients and a whole lot of heart.
+                It might involve a little bit of chaos with six kids around, but that just adds to the love!
+            </p>
+            <p class="text-md mt-4 italic text-gray-600">Thank you for supporting our small family business!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <!-- Card 1: Homeschooling Mama -->
+            <div class="card">
+                <img src="https://placehold.co/150x150/CCE0C0/333333?text=Family" alt="Homeschooling Mama Icon" class="w-24 h-24 mb-4 rounded-full border-4 border-orange-200 object-cover">
+                <h4 class="text-xl font-semibold mb-2 text-brown-custom">A Family Affair</h4>
+                <p class="text-gray-700">Baked by Kalee, a homeschooling mama of six, our kitchen is filled with laughter and love, making every treat truly homemade.</p>
+            </div>
+            <!-- Card 2: Made From Scratch -->
+            <div class="card">
+                <img src="https://placehold.co/150x150/FFDDC1/333333?text=Fresh" alt="Fresh Ingredients Icon" class="w-24 h-24 mb-4 rounded-full border-4 border-orange-200 object-cover">
+                <h4 class="text-xl font-semibold mb-2 text-brown-custom">Fresh & From-Scratch</h4>
+                <p class="text-gray-700">We believe in quality! All our baked goods are made from scratch with the freshest ingredients, ensuring delightful flavors.</p>
+            </div>
+            <!-- Card 3: Cottage Food Laws -->
+            <div class="card">
+                <img src="https://placehold.co/150x150/E0D2C0/333333?text=Home" alt="Cottage Food Icon" class="w-24 h-24 mb-4 rounded-full border-4 border-orange-200 object-cover">
+                <h4 class="text-xl font-semibold mb-2 text-brown-custom">Baking with Care</h4>
+                <p class="text-gray-700">Operating under Mississippi's cottage food laws, we ensure all our products are prepared safely and deliciously from our home kitchen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Bakes Section -->
+    <section id="bakes" class="section-bg-light py-16 px-4">
+        <div class="container mx-auto text-center mb-12">
+            <h3 class="text-4xl font-bold text-brown-custom mb-4">Our Delicious Bakes</h3>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                Whether you’re celebrating something sweet or just craving a homemade treat, I’ve got you covered!
+                Here's a taste of what we offer (full menu coming soon!):
+            </p>
+        </div>
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Bake Card 1: Cookies -->
+            <div class="card">
+                <img src="https://placehold.co/200x150/D1EDF2/333?text=Cookies" alt="Cookies" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
+                <h4 class="text-2xl font-semibold mb-2 text-brown-custom">Cookies</h4>
+                <p class="text-gray-700">Classic chocolate chip, soft snickerdoodles, hearty oatmeal raisin, and seasonal favorites!</p>
+            </div>
+            <!-- Bake Card 2: Cakes -->
+            <div class="card">
+                <img src="https://placehold.co/200x150/FFEBCD/333?text=Cakes" alt="Cakes" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
+                <h4 class="text-2xl font-semibold mb-2 text-brown-custom">Cakes & Cookie Cakes</h4>
+                <p class="text-gray-700">Celebration cakes for any occasion, decadent brownies, and fun cookie cakes too!</p>
+            </div>
+            <!-- Bake Card 3: Breads -->
+            <div class="card">
+                <img src="https://placehold.co/200x150/DCEBCC/333?text=Bread" alt="Breads" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
+                <h4 class="text-2xl font-semibold mb-2 text-brown-custom">Sourdough & Artisan Breads</h4>
+                <p class="text-gray-700">Freshly baked sourdough, rustic artisan loaves, and warm, fluffy cinnamon rolls.</p>
+            </div>
+            <!-- Bake Card 4: More -->
+            <div class="card">
+                <img src="https://placehold.co/200x150/F0E6E6/333?text=More" alt="More Baked Goods" class="w-full h-48 object-cover mb-4 rounded-md shadow-sm">
+                <h4 class="text-2xl font-semibold mb-2 text-brown-custom">And More!</h4>
+                <p class="text-gray-700">Keep an eye out for seasonal specials, new creations, and all sorts of delightful homemade treats!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section id="order" class="container mx-auto py-16 px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-4xl font-bold text-brown-custom mb-4">How to Order & Pickup</h3>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                Ready to indulge in some homemade goodness? Ordering is simple!
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+            <div class="card max-w-md w-full">
+                <h4 class="text-2xl font-semibold mb-4 text-brown-custom">Place Your Order</h4>
+                <p class="text-gray-700 mb-6">
+                    Please message Kalee directly on her Facebook page to place your order.
+                    She's currently working on a full menu to post, but you can always inquire about specific items or custom requests!
+                </p>
+                <a href="https://www.facebook.com/messages/t/YourFacebookPageName" target="_blank" class="btn-primary">
+                    Message Us on Facebook
+                </a>
+                <p class="text-sm text-gray-500 mt-2">
+                    (Replace 'YourFacebookPageName' with Kalee's actual Facebook page name or link for messaging)
+                </p>
+            </div>
+
+            <div class="card max-w-md w-full mt-8 md:mt-0">
+                <h4 class="text-2xl font-semibold mb-4 text-brown-custom">Local Pickup Only</h4>
+                <p class="text-gray-700 mb-6">
+                    All orders are for local pickup only in the Vicksburg & Port Gibson, MS areas.
+                    Once your order is confirmed, Kalee will arrange a convenient pickup time and location with you.
+                </p>
+                <img src="https://placehold.co/200x150/C0E0C0/333?text=Map+Pin" alt="Location Pin" class="w-24 h-24 mb-4 rounded-full border-4 border-orange-200 object-cover">
+                <p class="text-lg font-medium text-gray-800">Vicksburg & Port Gibson, MS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-orange-500 text-white py-8 mt-16 rounded-t-lg shadow-inner">
+        <div class="container mx-auto text-center px-4">
+            <p class="mb-4 text-lg">&copy; 2025 Six Sprinkles & a Whisk. All rights reserved.</p>
+            <p class="text-sm">Baked with love in Vicksburg & Port Gibson, MS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
