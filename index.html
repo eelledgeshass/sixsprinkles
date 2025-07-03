@@ -22,13 +22,35 @@
             background-color: #fff9f0; /* Slightly lighter background for sections */
         }
         .btn-primary {
-            @apply bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out;
+            /* Custom fallback for Tailwind classes if needed */
+            background-color: #ea580c; /* bg-orange-600 */
+            color: #fff;
+            font-weight: 800; /* font-extrabold */
+            font-size: 1rem; /* text-xl */
+            padding-top: 0.5rem; /* py-3 */
+            padding-bottom: 0.5rem;
+            padding-left: 1.5rem; /* px-6 */
+            padding-right: 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); /* shadow-xl */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #c2410c; /* hover:bg-orange-700 */
+            transform: scale(1.05);
         }
         .btn-cta {
             animation: pulse 2s infinite;
         }
         .card {
-            @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         .text-brown-custom {
             color: #7F5F3E; /* Custom brown color for text */
@@ -70,7 +92,14 @@
             <img src="./images/sixsprinkles.jpg" alt="6 Sprinkles & a Whisk Logo" class="h-32 w-32 mx-auto mb-6 rounded-full border-4 border-orange-300 object-cover">
             <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-brown-custom">Welcome to 6 Sprinkles & a Whisk!</h2>
             <p class="text-xl md:text-2xl mb-8 font-light italic text-gray-700">Homemade Goodness, Baked with Love (and just a little bit of chaos)!</p>
-            <a href="#order" class="btn-primary">Message to Order Now!</a>
+            <a href="https://www.facebook.com/profile.php?id=61577717257564" target="_blank" class="btn-primary btn-cta">
+                Message
+            </a>
+            <br>
+            <span class="block mt-4">
+                or Call to Order Now!<br>
+                (601) 642-7600
+            </span>
         </div>
     </section>
 
@@ -164,12 +193,13 @@
             <div class="card max-w-md w-full">
                 <h4 class="text-2xl font-semibold mb-4 text-brown-custom">Place Your Order</h4>
                 <p class="text-gray-700 mb-6">
-                    Please message Kalee directly on her Facebook page to place your order.
+                    Please message Kalee directly on her Facebook page to place your order or call her (601) 529-9813.
                     She's currently working on a full menu to post, but you can always inquire about specific items or custom requests!
                 </p>
                 <a href="https://www.facebook.com/profile.php?id=61577717257564" target="_blank" class="btn-primary btn-cta">
                     Message Us on Facebook
                 </a>
+                or Call (601) 642-7600
                 <p class="text-sm text-gray-500 mt-2">
                     6 Sprinkles & a Whisk is a small family business, and Kalee will respond as soon as possible to confirm your order.)
                 </p>
